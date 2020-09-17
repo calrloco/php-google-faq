@@ -87,6 +87,14 @@ $faq = array(
                     <li class="nav-menu-items">technologies</li>
                     <li class="nav-menu-items items-active">FAQ</li>
                 </ul>
+                <div class="gmail-link">
+                    <div class="gmail-icon">
+                        <a href="https://www.gmail.com/">
+                            <img src="https://i.ibb.co/pjwtyks/Untitled-1.png" alt="">
+                        </a>
+                        <a class="email" href="https://www.gmail.com/">55543@booleaninstitute.edu</a>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container-text">
