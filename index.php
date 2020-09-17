@@ -116,6 +116,16 @@ $faq = array(
             <?php } ?>
 
         </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <ul class="footer-list">
+                    <li class="footer-li">google</li>
+                    <li class="footer-li">about google</li>
+                    <li class="footer-li">provacy</li>
+                    <li class="footer-li">terms</li>
+                </ul>
+            </div>
+        </footer>
     </div>
     <script src="js/app.js"></script>
 </body>
