@@ -14,87 +14,84 @@
 .container-text {
   max-width: 700px;
   margin: 0 auto;
-  padding:3.2rem;
+  padding: 3.2rem;
 }
-
 
 html {
   font-size: 62.5%;
-  font-family: 'Roboto', sans-serif;
-
+  font-family: "Roboto", sans-serif;
 }
 
 .nav {
   max-height: 10rem;
-  border-bottom: 1px solid rgba(151,151,151,0.5);
+  border-bottom: 1px solid rgba(151, 151, 151, 0.5);
   box-sizing: border-box;
   padding: 24px 24px 0 24px;
   top: 0;
   width: 100%;
   z-index: 2000;
   position: sticky;
-  display:flex;
+  display: flex;
   flex-direction: column;
   top: 0;
   left: 0;
   z-index: 200;
-  background-color:#fff;
+  background-color: #fff;
 }
-.nav-top{
-    flex: 1;
-    display:flex;
-    align-items: center;
+.nav-top {
+  flex: 1;
+  display: flex;
+  align-items: center;
 }
-.privacy-terms{
-  margin:0 .7rem;
-  font-size:1.4rem;
+.privacy-terms {
+  margin: 0 0.7rem;
+  font-size: 1.4rem;
   color: #5f6368;
 }
-.google-link{
+.google-link {
   height: 100%;
-  display:flex;
-  align-items:center;
+  display: flex;
+  align-items: center;
 }
-.google-link img{
+.google-link img {
   height: 1.4rem;
 }
-.nav-bottom{
+.nav-bottom {
   flex: 1;
-  display:flex;
-  align-items:flex-end;
-  margin-top:1.5rem;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 1.5rem;
 }
-.nav-menu{
-  display:flex;
-  list-style:none;
-  
+.nav-menu {
+  display: flex;
+  list-style: none;
 }
-.nav-menu-items{
+.nav-menu-items {
   margin-right: 3.2rem;
-  padding:0 0 .6rem;
+  padding: 0 0 0.6rem;
   cursor: pointer;
-  font-size:1rem;
+  font-size: 1rem;
   color: #5f6368;
   text-transform: capitalize;
-  }
-.items-active{
-  color: #3367d6;
-  border-bottom:1.5px solid #3367d6;
 }
-a{
+.items-active {
+  color: #3367d6;
+  border-bottom: 2px solid #3367d6;
+}
+a {
   cursor: pointer;
 }
-.faq__item-paragraph{
-  margin-bottom:1rem;
-  padding-top:1rem;
-  font-size:.9rem;
-  color: rgba(0,0,0,0.87);
+.faq__item-paragraph {
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.87);
   font-weight: 400;
 }
 .faq__item-heading {
   color: #3c4043;
   font-size: 1.4rem;
-   margin: 0;
+  margin: 0;
   padding: 64px 0 0 0;
   font-weight: 500;
 }
