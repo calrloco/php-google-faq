@@ -1,4 +1,5 @@
 <?php
+// creo array con i paragrafi alcuni dei paragrafi sono a loro volta in un array perche staccati fra loro
 $faq = array(
     [
         'title' => 'How are you implementing the recent Court of Justice of the European Union (CJEU) decision on the right to be forgotten?',
@@ -63,7 +64,8 @@ $faq = array(
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>FAQ GOOGLE</title>
 </head>
@@ -71,15 +73,30 @@ $faq = array(
 <body>
     <div class="wrapper">
         <div class="nav">
-            <div class="nav-top"></div>
-            <div class="nav-bottom"></div>
+            <div class="nav-top">
+                <a href="https://www.google.com/" class="google-link">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_74x24dp.png" alt="">
+                </a>
+                <a class="privacy-terms">Privacy & Terms</a>
+            </div>
+            <div class="nav-bottom">
+                <ul class="nav-menu">
+                    <li class="nav-menu-items">Overviews</li>
+                    <li class="nav-menu-items">privacy policies</li>
+                    <li class="nav-menu-items">terms of service</li>
+                    <li class="nav-menu-items">technologies</li>
+                    <li class="nav-menu-items items-active">FAQ</li>
+                </ul>
+            </div>
         </div>
         <div class="container-text">
-
+            <!-- for each dell'array -->
             <?php foreach ($faq as $item) { ?>
                 <div class="faq__item">
                     <?php $content = $item['content']; ?>
                     <h2 class="faq__item-heading"><?php echo $item['title']; ?></h2>
+                    <!-- se content e un array creo un paragrafo per ogniuno degli elementi  
+                         altrimenti solo un paragrafo di tutto lélemento -->
                     <?php if (is_array($content)) {
                         foreach ($content as $paragraph) { ?>
                             <p class="faq__item-paragraph"><?php echo $paragraph; ?></p>
@@ -92,6 +109,7 @@ $faq = array(
 
         </div>
     </div>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
