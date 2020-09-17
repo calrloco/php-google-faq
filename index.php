@@ -87,6 +87,9 @@ $faq = array(
                     <li class="nav-menu-items">technologies</li>
                     <li class="nav-menu-items items-active">FAQ</li>
                 </ul>
+                <div class="gmail">
+                    
+                </div>
             </div>
         </div>
         <div class="container-text">
