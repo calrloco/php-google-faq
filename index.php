@@ -65,7 +65,7 @@ $faq = array(
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>FAQ GOOGLE</title>
 </head>
 
 <body>
@@ -75,21 +75,21 @@ $faq = array(
             <div class="nav-bottom"></div>
         </div>
         <div class="container-text">
-            <div class="container-faq">
-                <?php foreach ($faq as $item) { ?>
-                    <div class="faq__item">
-                        <?php $content = $item['content']; ?>
-                        <h2 class="faq__item-heading"><?php echo $item['title'] . '<br>'; ?></h2>
-                        <?php if (is_array($content)) {
-                            foreach ($content as $paragraph) { ?>
-                                <p class="faq__item-paragraph"><?php echo $paragraph . '<br><br>'; ?></p>
-                            <?php }
-                        } else { ?>
-                            <p class="faq__item-paragraph"> <?php echo $item['content'] . '<br>'; ?></p>
-                        <?php } ?>
-                    </div>
-                <?php } ?>
-            </div>
+
+            <?php foreach ($faq as $item) { ?>
+                <div class="faq__item">
+                    <?php $content = $item['content']; ?>
+                    <h2 class="faq__item-heading"><?php echo $item['title']; ?></h2>
+                    <?php if (is_array($content)) {
+                        foreach ($content as $paragraph) { ?>
+                            <p class="faq__item-paragraph"><?php echo $paragraph; ?></p>
+                        <?php }
+                    } else { ?>
+                        <p class="faq__item-paragraph"> <?php echo $item['content']; ?></p>
+                    <?php } ?>
+                </div>
+            <?php } ?>
+
         </div>
     </div>
 </body>
