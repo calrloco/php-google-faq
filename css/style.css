@@ -47,8 +47,16 @@ html {
 }
 .privacy-terms{
   margin:0 .7rem;
-  font-size:2.2rem;
+  font-size:1.4rem;
   color: #5f6368;
+}
+.google-link{
+  height: 100%;
+  display:flex;
+  align-items:center;
+}
+.google-link img{
+  height: 1.4rem;
 }
 .nav-bottom{
   flex: 1;
