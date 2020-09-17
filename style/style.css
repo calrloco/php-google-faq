@@ -1,0 +1,41 @@
+*,
+*:before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 100vw;
+  min-height: 100vh;
+}
+
+.container-text {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.container-faq {
+  width: 33%;
+}
+
+.faq__item-heading {
+  color: #3c4043;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+  padding: 64px 0 0 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+.nav {
+  height: 10rem;
+  background-color: aqua;
+}
