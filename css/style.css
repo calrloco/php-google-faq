@@ -20,7 +20,8 @@
 
 html {
   font-size: 62.5%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
+
 }
 
 .nav {
@@ -82,9 +83,8 @@ a{
 }
 .faq__item-heading {
   color: #3c4043;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 32px;
-  margin: 0;
+  font-size: 1.4rem;
+   margin: 0;
   padding: 64px 0 0 0;
+  font-weight: 500;
 }
